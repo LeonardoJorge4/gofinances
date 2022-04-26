@@ -43,8 +43,6 @@ const schema = yup.object().shape({
   .positive('O valor não pode ser negativo')
 })
 
-const dataKey = "@gofinances:transactions";
-
 export function Register() {
   const { navigate } = useNavigation();
   const [transactionType, setTransactionType] = useState('');
@@ -63,7 +61,7 @@ export function Register() {
     resolver: yupResolver(schema)
   });
 
-  function handleTransactionTypeSelect(type: 'up' | 'down') {
+  function handleTransactionTypeSelect(type: 'positive' | 'negative') {
     setTransactionType(type)
   }
 
@@ -75,7 +73,7 @@ export function Register() {
     setCategoryModalOpen(true)
   }
 
-  async function handleRegister(form: FormData) {
+  async function handleRegister(data: FormData) {
     if(!transactionType) {
       return Alert.alert("Selecione o tipo da transação");
     };
@@ -86,18 +84,20 @@ export function Register() {
 
     const newTransaction = {
       id: String(uuid.v4()),
-      name: form.name,
-      amount: form.amount,
-      transactionType,
+      name: data.name,
+      amount: data.amount,
+      type: transactionType,
       category: category.key,
       date: new Date()
     }
 
     try {
+      const dataKey = "@gofinances:transactions";
+
       const data = await AsyncStorage.getItem(dataKey);
       const currentData = data ? JSON.parse(data) : [];
-      console.log(currentData)
 
+      //Verificar erro aqui
       const dataFormatted = [
         ...currentData,
         newTransaction
@@ -152,15 +152,15 @@ export function Register() {
               <TransactionTypeButton
                 type="up"
                 title="Income"
-                isActive={transactionType === 'up'}
-                onPress={() => handleTransactionTypeSelect('up')}
+                isActive={transactionType === 'positive'}
+                onPress={() => handleTransactionTypeSelect('positive')}
               />
 
               <TransactionTypeButton
                 type="down"
                 title="Outcome"
-                isActive={transactionType === 'down'}
-                onPress={() => handleTransactionTypeSelect('down')}
+                isActive={transactionType === 'negative'}
+                onPress={() => handleTransactionTypeSelect('negative')}
               />
             </TransactionsTypes>
 
@@ -172,7 +172,7 @@ export function Register() {
 
           <Button
             title="Enviar"
-            onPress={handleSubmit(handleRegister)}
+            onPress={handleSubmit(data => handleRegister(data as FormData))}
           />
         </Form>
 
