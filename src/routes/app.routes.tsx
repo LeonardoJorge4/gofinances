@@ -1,10 +1,12 @@
 import React from 'react';
 import { Platform } from 'react-native';
+
 import { MaterialIcons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import { Dashboard } from '../screens/Dashboard';
+import { Resume } from '../screens/Resume';
 import { Register } from '../screens/Register';
+import { Dashboard } from '../screens/Dashboard';
 
 import theme from '../global/styles/theme';
 
@@ -62,7 +64,7 @@ export function AppRoutes() {
 
       <Screen
         name="Summary"
-        component={Register}
+        component={Resume}
         options={{
           title: "Resumo",
           tabBarIcon: (({ size, color }) => (
