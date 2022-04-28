@@ -5,6 +5,7 @@ import 'intl/locale-data/jsonp/pt-BR';
 import AppLoading from 'expo-app-loading';
 import { ThemeProvider } from 'styled-components'
 import { NavigationContainer } from '@react-navigation/native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import {
   useFonts,
@@ -16,7 +17,6 @@ import {
 import theme from './src/global/styles/theme';
 
 import { AppRoutes } from './src/routes/app.routes';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
