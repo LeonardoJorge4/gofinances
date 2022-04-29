@@ -19,6 +19,8 @@ import { InputForm } from '../../components/Forms/InputForm';
 import { CategorySelectButton } from '../../components/Forms/CategorySelectButton';
 import { TransactionTypeButton } from '../../components/Forms/TransactionTypeButton';
 
+import { useAuth } from '../../hooks/auth';
+
 import {
   Container,
   Header,
@@ -53,6 +55,7 @@ export function Register() {
     name: 'Categoria',
   });
 
+  const { user } = useAuth();
   const {
     control,
     handleSubmit,
@@ -93,7 +96,7 @@ export function Register() {
     }
 
     try {
-      const dataKey = "@gofinances:transactions";
+      const dataKey = `@gofinances:transactions_user:${user.id}`;
 
       const data = await AsyncStorage.getItem(dataKey);
       const currentData = data ? JSON.parse(data) : [];
@@ -152,14 +155,14 @@ export function Register() {
             <TransactionsTypes>
               <TransactionTypeButton
                 type="up"
-                title="Income"
+                title="Entrada"
                 isActive={transactionType === 'positive'}
                 onPress={() => handleTransactionTypeSelect('positive')}
               />
 
               <TransactionTypeButton
                 type="down"
-                title="Outcome"
+                title="Saída"
                 isActive={transactionType === 'negative'}
                 onPress={() => handleTransactionTypeSelect('negative')}
               />

@@ -8,7 +8,8 @@ import { ThemeProvider } from 'styled-components'
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { Routes } from './src/routes';
-import { AuthProvider } from './src/hooks/auth';
+import theme from './src/global/styles/theme';
+import { AuthProvider, useAuth } from './src/hooks/auth';
 
 import {
   useFonts,
@@ -17,7 +18,6 @@ import {
   Poppins_700Bold
 } from '@expo-google-fonts/poppins'
 
-import theme from './src/global/styles/theme';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -25,8 +25,9 @@ export default function App() {
     Poppins_500Medium,
     Poppins_700Bold
   });
+  const { userStorageLoading } = useAuth();
 
-  if (!fontsLoaded) {
+  if (!fontsLoaded || userStorageLoading) {
     return <AppLoading />
   }
 
