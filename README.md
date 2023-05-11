@@ -20,10 +20,10 @@
 <h2>Tecnologias utilizadas 🤯</h2>
 
 <ul>
-  <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
-  <li><a href="https://reactnative.dev/">React Native</a></li>
-  <li><a href="https://styled-components.com/docs/basics">Styled-components</a></li>
-  <li><a href="https://reactnavigation.org/">React-Navigation</a></li>
+  <li><a target="_blank" href="https://www.typescriptlang.org/">TypeScript</a></li>
+  <li><a target="_blank" href="https://reactnative.dev/">React Native</a></li>
+  <li><a target="_blank" href="https://styled-components.com/docs/basics">Styled-components</a></li>
+  <li><a target="_blank" href="https://reactnavigation.org/">React-Navigation</a></li>
 </ul>
 
 <h2>Requisitos de software 🔍</h2>
@@ -79,4 +79,4 @@ git push origin <sua-branch>
 Esse projeto se encontra sob a licença <strong>MIT</strong>. Para mais informações, acesse o arquivo <strong>LICENSE</strong>.
 
 <hr>
-<p align=center>Made with 💜 by <a href="https://www.linkedin.com/in/leonardo-jorge-a88a561b6">Leonardo Jorge</a><p>
+<p align=center>Made with 💜 by <a target="_blank" href="https://www.linkedin.com/in/leonardo-jorge-a88a561b6">Leonardo Jorge</a><p>
