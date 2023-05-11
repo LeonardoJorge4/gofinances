@@ -31,8 +31,6 @@
 <li><a href="https://yarnpkg.com/">Instalar o yarn</a></li>
 <li><a href="https://react-native.rocketseat.dev/">Instalar e configurar o Android Studio (opcional)</a></li>
 
-<h2><strike>Não</strike> Tente isso em casa! ⚠️</h2>
-
 <p>Para rodar o projeto, basta executar os seguintes comandos, em seu terminal com git</p>
 
 ```bash
