@@ -9,9 +9,8 @@
 <h2>Preview do projeto 🚀</h2>
 
 <div align=center>
-  <img width="250" src=".github/gofinances.gif"/>
+  <img width="855" alt="gofinances banner" src=".github/banner.png"/>
 </div>
-
 
 <h2>Sobre 🕵️</h2>
 
@@ -24,6 +23,10 @@
   <li><a target="_blank" href="https://reactnative.dev/">React Native</a></li>
   <li><a target="_blank" href="https://styled-components.com/docs/basics">Styled-components</a></li>
   <li><a target="_blank" href="https://reactnavigation.org/">React-Navigation</a></li>
+  <li><a target="_blank" href="https://docs.swmansion.com/react-native-gesture-handler/">React Native Gesture Handler</a></li>
+  <li><a target="_blank" href="https://react-hook-form.com/">React Hook Form</a></li>
+  <li><a target="_blank" href="https://github.com/jquense/yup">Yup</a></li>
+  <li><a target="_blank" href="https://expo.io/">Expo</a></li>
 </ul>
 
 <h2>Requisitos de software 🔍</h2>
@@ -48,12 +51,16 @@
 
   # E, em outro terminal, execute
 
-  yarn android # ou yarn ios
+  yarn android # Necessita do Android Studio
+
+  # ou
+
+  yarn ios # Funciona apenas no Mac
 ```
 
 <h2>Como contribuir? 😍</h2>
 
-<p>Além de marcar o repositório com uma ⭐, para aumentar sua visibilidade, você pode fazer um fork do projeto, executar os passos anteriores, e</p>
+<p>Além de marcar o repositório com uma ⭐, para aumentar sua visibilidade, você pode fazer um fork do projeto, executar os passos anteriores.</p>
 
 ```bash
 # Dentro da pasta do seu fork, crie uma branch para fazer as alterações

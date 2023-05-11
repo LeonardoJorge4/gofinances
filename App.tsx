@@ -4,6 +4,7 @@ import { StatusBar } from 'react-native';
 import 'intl';
 import 'intl/locale-data/jsonp/pt-BR';
 import AppLoading from 'expo-app-loading';
+import * as SplashScreen from 'expo-splash-screen';
 import { ThemeProvider } from 'styled-components'
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
@@ -18,6 +19,8 @@ import {
   Poppins_700Bold
 } from '@expo-google-fonts/poppins'
 
+// Keep the splash screen visible while we fetch resources
+SplashScreen.preventAutoHideAsync();
 
 export default function App() {
   const [fontsLoaded] = useFonts({
