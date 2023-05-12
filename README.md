@@ -1,40 +1,48 @@
 <h1 align=center>
   💲 GoFinances 💲
-</h2>
+</h1>
 
 <h3 align=center>
   Gerencie suas transações de maneira inteligente
 </h3>
 
-<h2>Preview do projeto 🚀</h2>
+## 📷 Preview do projeto
 
 <div align=center>
   <img width="855" alt="gofinances banner" src=".github/banner.png"/>
 </div>
 
-<h2>Sobre 🕵️</h2>
+## 🕵️ Sobre 
 
-<p>O gofinances é uma ótima alternativa para acompanhamento de transações financeiras. Ele fornece uma descrição dos registros criados e um balanço dos valores, para você, de forma simples e elegante.<p>
+O gofinances é uma ótima alternativa para acompanhamento de transações financeiras. Ele fornece uma descrição dos registros criados e um balanço dos valores, para você, de forma simples e elegante.
 
-<h2>Tecnologias utilizadas 🤯</h2>
+## 🚀 Tecnologias
 
-<ul>
-  <li><a target="_blank" href="https://www.typescriptlang.org/">TypeScript</a></li>
-  <li><a target="_blank" href="https://reactnative.dev/">React Native</a></li>
-  <li><a target="_blank" href="https://styled-components.com/docs/basics">Styled-components</a></li>
-  <li><a target="_blank" href="https://reactnavigation.org/">React-Navigation</a></li>
-  <li><a target="_blank" href="https://docs.swmansion.com/react-native-gesture-handler/">React Native Gesture Handler</a></li>
-  <li><a target="_blank" href="https://react-hook-form.com/">React Hook Form</a></li>
-  <li><a target="_blank" href="https://github.com/jquense/yup">Yup</a></li>
-  <li><a target="_blank" href="https://expo.io/">Expo</a></li>
-</ul>
+✔ [TypeScript](https://www.typescriptlang.org/)
+<br />
+✔ [React Native](ttps://reactnative.dev/)
+<br />
+✔ [Styled Components](https://styled-components.com/docs/basics)
+<br />
+✔ [React Navigation](https://reactnavigation.org/)
+<br />
+✔ [React Native Gesture Handler](https://docs.swmansion.com/react-native-gesture-handler/)
+<br />
+✔ [React Hook Form](https://react-hook-form.com/)
+<br />
+✔ [Yup](https://github.com/jquense/yup)
+<br />
+✔ [Expo](https://expo.io/)
+<br />
 
-<h2>Requisitos de software 🔍</h2>
+## 🔍 Requisitos de software
 
 <li><a href="https://yarnpkg.com/">Instalar o yarn</a></li>
 <li><a href="https://react-native.rocketseat.dev/">Instalar e configurar o Android Studio (opcional)</a></li>
 
-<p>Para rodar o projeto, basta executar os seguintes comandos, em seu terminal com git</p>
+## ⚙ Configurações
+
+Para rodar o projeto, basta executar os seguintes comandos, em seu terminal com git
 
 ```bash
   # Faça um clone do repositório
@@ -58,30 +66,16 @@
   yarn ios # Funciona apenas no Mac
 ```
 
-<h2>Como contribuir? 😍</h2>
-
-<p>Além de marcar o repositório com uma ⭐, para aumentar sua visibilidade, você pode fazer um fork do projeto, executar os passos anteriores.</p>
-
-```bash
-# Dentro da pasta do seu fork, crie uma branch para fazer as alterações
-
-git checkout -b <sua-branch>
-
-# Faça suas alterações
-# ...
-
-# Faça um commit do que foi feito
-
-git add .
-git commit -m 'conte o que você fez'
-
-# Faça o push do que foi feito
-
-git push origin <sua-branch>
-```
-
-<h2>📝 Licença</h2>
+## 📝 Licença
 Esse projeto se encontra sob a licença <strong>MIT</strong>. Para mais informações, acesse o arquivo <strong>LICENSE</strong>.
 
-<hr>
-<p align=center>Made with 💜 by <a target="_blank" href="https://www.linkedin.com/in/leonardo-jorge-a88a561b6">Leonardo Jorge</a><p>
+<p>Made with 💜 by Leonardo Jorge<p>
+<p>
+    <a href="https://www.linkedin.com/in/leonardo-jorge-a88a561b6/" target="_blank">
+        <img align="center" src="https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin Leonardo Jorge" />
+    </a>
+    <a href="mailto:leonardoti4437@gmail.com" target="_blank">
+        <img align="center" src="https://img.shields.io/badge/Gmail-FF0000?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Leonardo Jorge" />
+    </a>
+</p>
+
