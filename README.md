@@ -20,7 +20,7 @@ O gofinances é uma ótima alternativa para acompanhamento de transações finan
 
 ✔ [TypeScript](https://www.typescriptlang.org/)
 <br />
-✔ [React Native](ttps://reactnative.dev/)
+✔ [React Native](https://reactnative.dev/)
 <br />
 ✔ [Styled Components](https://styled-components.com/docs/basics)
 <br />
